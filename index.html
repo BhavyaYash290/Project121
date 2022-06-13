@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>
+            Mystery : A Case Study
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+            <h4>CASE STUDY BETWEEN GOOGLE LENS AND MOBILENET</h4><BR><BR>
+            <img src="logo1.png" width="250" height="50"><br>
+            <h4>vs</h4>
+            <h6 class="btn btn-primary">MOBILENET</h5>
+                <ol>
+                    <div id="myDiv">
+                        <li><b>Test Image - </b><img src="bottle.png" class="img-responsive" width="200" height="200"></li>
+                        <span><h5>Output on <b>GOOGLE LENS</b>-<span>Bottle</span></h5></span>
+                        <span><h5>Output on <b>MOBILENET MODEL</b>-<span>Oxygen Mask</span></h5></span>
+                        <div><h4>Result - </h4><hr><h4>GOOGLE LENS is more accurate...</h4></div>
+                    </div>  
+                </ol>
+                <ol>
+                    <div id="myDiv">
+                        <li><b>Test Image - </b><img src="apple.png" class="img-responsive" width="200" height="200"></li>
+                        <span><h5>Output on <b>GOOGLE LENS</b>-<span>Apple</span></h5></span>
+                        <span><h5>Output on <b>MOBILENET MODEL</b>-<span>Fruit</span></h5></span>
+                        <div><h4>Result - </h4><hr><h4>GOOGLE LENS is more accurate...</h4></div>
+                    </div>  
+                </ol>
+                <ol>
+                    <div id="myDiv">
+                        <li><b>Test Image - </b><img src="book.png" class="img-responsive" width="200" height="200"></li>
+                        <span><h5>Output on <b>GOOGLE LENS</b>-<span>Sheet</span></h5></span>
+                        <span><h5>Output on <b>MOBILENET MODEL</b>-<span>Sheet</span></h5></span>
+                        <div><h4>Result - </h4><hr><h4>None are correct</h4></div>
+                    </div>  
+                </ol>
+                <ol>
+                    <div id="myDiv">
+                        <li><b>Test Image - </b><img src="boy.jpg" class="img-responsive" width="200" height="200"></li>
+                        <span><h5>Output on <b>GOOGLE LENS</b>-<span>Boy</span></h5></span>
+                        <span><h5>Output on <b>MOBILENET MODEL</b>-<span>Person</span></h5></span>
+                        <div><h4>Result - </h4><hr><h4>GOOGLE LENS is more accurate...</h4></div>
+                    </div>  
+                </ol>
+                <ol>
+                    <div id="myDiv">
+                        <li><b>Test Image - </b><img src="girl.png" class="img-responsive" width="100" height="200"></li>
+                        <span><h5>Output on <b>GOOGLE LENS</b>-<span>Girl</span></h5></span>
+                        <span><h5>Output on <b>MOBILENET MODEL</b>-<span>Person</span></h5></span>
+                        <div><h4>Result - </h4><hr><h4>GOOGLE LENS is more accurate...</h4></div>
+                    </div>  
+                </ol>
+                <ol>
+                    <div id="myDiv">
+                        <li><b>Test Image - </b><img src="rabbit.png" class="img-responsive" width="200" height="200"></li>
+                        <span><h5>Output on <b>GOOGLE LENS</b>-<span>Rabbit</span></h5></span>
+                        <span><h5>Output on <b>MOBILENET MODEL</b>-<span>Animal</span></h5></span>
+                        <div><h4>Result - </h4><hr><h4>GOOGLE LENS is more accurate...</h4></div>
+                    </div>  
+                </ol>
+                <ol>
+                    <div id="myDiv">
+                        <li><b>Test Image - </b><img src="glasses.jpg" class="img-responsive" width="200" height="200"></li>
+                        <span><h5>Output on <b>GOOGLE LENS</b>-<span>Sunglasses</span></h5></span>
+                        <span><h5>Output on <b>MOBILENET MODEL</b>-<span>Shades</span></h5></span>
+                        <div><h4>Result - </h4><hr><h4>Neither is correct</h4></div>
+                    </div>  
+                </ol>
+                <ol>
+                    <div id="myDiv">
+                        <li><b>Test Image - </b><img src="sheep.png" class="img-responsive" width="200" height="200"></li>
+                        <span><h5>Output on <b>GOOGLE LENS</b>-<span>Sheep</span></h5></span>
+                        <span><h5>Output on <b>MOBILENET MODEL</b>-<span>WOOL</span></h5></span>
+                        <div><h4>Result - </h4><hr><h4>GOOGLE LENS is more accurate...</h4></div>
+                    </div>  
+                </ol>
+                <ol>
+                    <div id="myDiv">
+                        <li><b>Test Image - </b><img src="hose.png" class="img-responsive" width="200" height="200"></li>
+                        <span><h5>Output on <b>GOOGLE LENS</b>-<span>hose</span></h5></span>
+                        <span><h5>Output on <b>MOBILENET MODEL</b>-<span>Pipe</span></h5></span>
+                        <div><h4>Result - </h4><hr><h4>GOOGLE LENS is more accurate...</h4></div>
+                    </div>  
+                </ol>
+                <ol>
+                    <div id="myDiv">
+                        <li><b>Test Image - </b><img src="house.png" class="img-responsive" width="200" height="200"></li>
+                        <span><h5>Output on <b>GOOGLE LENS</b>-<span>House</span></h5></span>
+                        <span><h5>Output on <b>MOBILENET MODEL</b>-<span>House</span></h5></span>
+                        <div><h4>Result - </h4><hr><h4>Draw</h4></div>
+                    </div>  
+                </ol>
+                <ol>
+                    <div id="myDiv">
+                        <li><b>Test Image - </b><img src="torch.png" class="img-responsive" width="200" height="200"></li>
+                        <span><h5>Output on <b>GOOGLE LENS</b>-<span>Torch</span></h5></span>
+                        <span><h5>Output on <b>MOBILENET MODEL</b>-<span>Flashlight</span></h5></span>
+                        <div><h4>Result - </h4><hr><h4>Draw</h4></div>
+                    </div>  
+                </ol>
+                <p class="btn btn-danger">Therfore, GOOGLE LENS is more accurate...</p>
+        </center>
+    </body>
+</html>
